@@ -154,7 +154,7 @@ public class EntityPlane extends EntityDriveable implements IEntityAdditionalSpa
 			data.writeFloat(axes.getPitch());
 			data.writeFloat(axes.getRoll());
 		}
-		catch (IOException e)
+		catch (Throwable e)
 		{
 			e.printStackTrace();
 		}		

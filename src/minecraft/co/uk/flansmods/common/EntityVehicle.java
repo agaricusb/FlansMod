@@ -12,7 +12,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.src.ModLoader;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSource;
@@ -873,7 +872,7 @@ public class EntityVehicle extends EntityDriveable implements IEntityAdditionalS
 			data.writeFloat(axes.getPitch());
 			data.writeFloat(axes.getRoll());
 		}
-		catch (IOException e)
+		catch (Throwable e)
 		{
 			e.printStackTrace();
 		}	
